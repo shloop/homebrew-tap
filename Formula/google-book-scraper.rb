@@ -5,26 +5,31 @@
 class GoogleBookScraper < Formula
   desc "Tool for downloading the contents of books hosted on books.google.com for offlin"
   homepage "https://github.com/shloop/google-book-scraper"
-  url "https://github.com/shloop/google-book-scraper/archive/refs/tags/v0.3.8.tar.gz"
-  sha256 "fefef7d5fc816763439709655a32661ef86900abe473823356dec316a94da112"
+  url "https://github.com/shloop/google-book-scraper/archive/refs/tags/v0.3.7-test.tar.gz"
+  sha256 "4616ac76f8358a97f06d3eafca6ea78332e6b4ea6057bfbb86b5db499ce72af7"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/shloop/google-book-scraper/releases/download/v0.3.8/google-book-scraper-0.3.8-darwin-amd64.tar.gz"
-      sha256 "e7de2ff01d8773e9e9db7f32e6a628bdf88bd639a9286748bdae47d246cfb136"
+      url "https://github.com/shloop/google-book-scraper/releases/download/v0.3.7-test/google-book-scraper-0.3.7-test-darwin-amd64.tar.gz"
+      sha256 "fe03c89542e1b15dc4173fe75185731862be7bf92c0fbf60b9263968bd91c964"
     end
 
     on_arm do
-      url "https://github.com/shloop/google-book-scraper/releases/download/v0.3.8/google-book-scraper-0.3.8-darwin-arm64.tar.gz"
-      sha256 "f550657cd8d74688fd8cc157d7f084d6afab20682a0b022d0848b5110c6444e0"
+      url "https://github.com/shloop/google-book-scraper/releases/download/v0.3.7-test/google-book-scraper-0.3.7-test-darwin-arm64.tar.gz"
+      sha256 "4852e60d84338c77ebf6cb2e4e53e218518eebd6589b68d2cccd3d20ec7cca1f"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/shloop/google-book-scraper/releases/download/v0.3.8/google-book-scraper-0.3.8-linux-amd64.tar.gz"
-      sha256 "502fccc87630f95222850caf97d287cbc6ecac9cf2dadd71f6f6081781e45873"
+      url "https://github.com/shloop/google-book-scraper/releases/download/v0.3.7-test/google-book-scraper-0.3.7-test-linux-amd64.tar.gz"
+      sha256 "835e58d3afb97482974c31585e41a9d7d9338e3e87cb6aeb281d33d6799d85bf"
+    end
+
+    on_arm do
+      url "https://github.com/shloop/google-book-scraper/releases/download/v0.3.7-test/google-book-scraper-0.3.7-test-linux-arm64.tar.gz"
+      sha256 "4896af190bf2fe0a04ea0146fb8815a2e0a8efdc8536f3b21ab474d2c497bc2c"
     end
   end
 
