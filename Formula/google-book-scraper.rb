@@ -9,6 +9,25 @@ class GoogleBookScraper < Formula
   sha256 "fefef7d5fc816763439709655a32661ef86900abe473823356dec316a94da112"
   license "Apache-2.0"
 
+  on_macos do
+    on_intel do
+      url "https://github.com/shloop/google-book-scraper/releases/download/v0.3.8/google-book-scraper-0.3.8-darwin-amd64.tar.gz"
+      sha256 "e7de2ff01d8773e9e9db7f32e6a628bdf88bd639a9286748bdae47d246cfb136"
+    end
+
+    on_arm do
+      url "https://github.com/shloop/google-book-scraper/releases/download/v0.3.8/google-book-scraper-0.3.8-darwin-arm64.tar.gz"
+      sha256 "f550657cd8d74688fd8cc157d7f084d6afab20682a0b022d0848b5110c6444e0"
+    end
+  end
+
+  on_linux do
+    on_intel do
+      url "https://github.com/shloop/google-book-scraper/releases/download/v0.3.8/google-book-scraper-0.3.8-linux-amd64.tar.gz"
+      sha256 "502fccc87630f95222850caf97d287cbc6ecac9cf2dadd71f6f6081781e45873"
+    end
+  end
+
   def install
     bin.install gbscraper
   end
