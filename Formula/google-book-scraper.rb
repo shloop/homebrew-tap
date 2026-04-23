@@ -29,6 +29,6 @@ class GoogleBookScraper < Formula
   end
 
   def install
-    bin.install gbscraper
+    bin.install "gbscraper"
   end
 end
